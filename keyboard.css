@@ -1,0 +1,123 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: sans-serif;
+  font-weight: 100;
+  background-color: lightgrey;
+}
+
+.keyboard {
+  width: 960px;
+  height: 380px;
+  margin: 50px auto;
+  padding: 0.5em;
+  background-color: gray;
+  color: lightgrey;
+  border-radius: 1em;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-content: space-around;
+  column-gap: 0.3em;
+}
+
+.key {
+  width: 6%;
+  height: 15%;
+  border-radius: 0.4em;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0.1em;
+}
+
+.key p {
+  margin: 0;
+  padding: 0;
+}
+
+.right {
+  align-items: flex-end;
+  justify-content: flex-end;
+  /* padding-right: 0.3em; */
+}
+
+.left {
+  align-items: flex-start;
+  justify-content: flex-end;
+  /* padding-left: 0.3em; */
+}
+
+.esc {
+  height: 10%;
+  justify-content: center;
+}
+
+.touch-bar {
+  width: 87%;
+  height: 10%;
+}
+
+.touch-id {
+  width: 4%;
+  height: 10%;
+}
+
+.modifier > p:first-child {
+ align-self: flex-end;
+ padding-right: 0.2em;
+}
+
+.delete, .tab {
+  width: 9%;
+}
+
+.caps-lock, .return {
+  width: 11%;
+}
+
+.shift {
+  width: 14%;
+}
+
+.command {
+  width: 7.5%;
+}
+
+.space {
+  width: 34%;
+}
+
+.arrows {
+  background-color: gray;
+  width: 20%;
+}
+
+.arrows > div {
+  width: 100%;
+  height: 45%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.arrows > div:first-child {
+  justify-content: center;
+}
+
+.arrows p {
+  width: 31%;
+  height: 90%;
+  background-color: black;
+  border-radius: 0.3em;
+  text-align: center;
+}
+
+div:hover {
+  /* font-weight: 400; */
+  text-shadow: 0 0 0.1em white;
+}
